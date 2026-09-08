@@ -53,7 +53,10 @@ def fetch():
             weeks { contributionDays { date contributionCount weekday } }
           }
         }
-        repositories(first: 100, ownerAffiliations: OWNER, isFork: false) {
+        # privacy: PUBLIC keeps output identical no matter whose token runs this.
+        # Without it a `repo`-scoped local token counts private repos and a
+        # CI GITHUB_TOKEN does not, so the card flip-flops on every run.
+        repositories(first: 100, ownerAffiliations: OWNER, isFork: false, privacy: PUBLIC) {
           totalCount
           nodes {
             stargazerCount
