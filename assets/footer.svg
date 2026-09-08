@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="110" viewBox="0 0 1000 110" role="img" aria-label="Amizhthan Senguttuvan">
+<defs>
+  <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#0F2027"/>
+    <stop offset="50%" stop-color="#203A43"/>
+    <stop offset="100%" stop-color="#2C5364"/>
+  </linearGradient>
+</defs>
+<style>
+  .n { font: 700 44px 'Segoe UI', Ubuntu, Sans-Serif; fill: #ffffff; letter-spacing: .5px }
+  .d { font: 400 17px 'Segoe UI', Ubuntu, Sans-Serif; fill: #9fd4e0 }
+</style>
+<path d="M0,0 C150,52 260,-14 420,22 C580,58 700,-14 860,18 C920,30 970,42 1000,34 L1000,110 L0,110 Z" fill="url(#g)"/>
+
+</svg>

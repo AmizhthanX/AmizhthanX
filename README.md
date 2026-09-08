@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F2027,50:203A43,100:2C5364&height=200&section=header&text=Amizhthan%20Senguttuvan&fontSize=48&fontColor=ffffff&fontAlignY=35&desc=Software%20Developer%20%C2%B7%20AI%2FML%20%C2%B7%20Full-Stack&descSize=18&descAlignY=55" width="100%" />
+<img src="assets/header.svg" alt="Amizhthan Senguttuvan — Software Developer" width="100%" />
 
 <a href="https://amizhthan.me">
   <img src="https://img.shields.io/badge/Portfolio-amizhthan.me-2C5364?style=for-the-badge&logo=googlechrome&logoColor=white" />
@@ -119,12 +119,23 @@ Churn prediction and behavioral segmentation from raw game-server logs.
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=AmizhthanX&show_icons=true&hide_border=true&title_color=2C5364&icon_color=2C5364&bg_color=0d1117&text_color=c9d1d9&include_all_commits=true" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AmizhthanX&layout=compact&hide_border=true&title_color=2C5364&bg_color=0d1117&text_color=c9d1d9&langs_count=8" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg" />
+  <img src="assets/stats-light.svg" alt="GitHub statistics" height="200" />
+</picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/langs-dark.svg" />
+  <img src="assets/langs-light.svg" alt="Most used languages" height="200" />
+</picture>
 
-<br/>
+<br/><br/>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=AmizhthanX&theme=react-dark&hide_border=true&area=true&color=2C5364&line=2C5364&point=ffffff" width="98%" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/heatmap-dark.svg" />
+  <img src="assets/heatmap-light.svg" alt="Contribution activity over the last year" width="98%" />
+</picture>
+
+<sub>Cards are generated from the GitHub API and refreshed daily by <a href="./.github/workflows/refresh-cards.yml">a workflow</a> — no third-party services.</sub>
 
 </div>
 
@@ -134,6 +145,6 @@ Churn prediction and behavioral segmentation from raw game-server logs.
 
 <i>Always building something. Reach out if you want to build it together.</i>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2C5364,50:203A43,100:0F2027&height=120&section=footer" width="100%" />
+<img src="assets/footer.svg" alt="" width="100%" />
 
 </div>
