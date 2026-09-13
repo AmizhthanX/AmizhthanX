@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="30" viewBox="0 0 1000 30" aria-hidden="true">
+<style>
+@keyframes fade-up { from { opacity: 0; transform: translateY(8px) } }
+@keyframes fade-in { from { opacity: 0 } }
+@keyframes slide-in { from { opacity: 0; transform: translateX(-10px) } }
+@keyframes twinkle { 0%, 100% { opacity: .2 } 50% { opacity: 1 } }
+@keyframes glint { 50% { opacity: .45 } }
+@keyframes blink { 50% { opacity: 0 } }
+.fu { animation: fade-up .7s cubic-bezier(.2, .8, .2, 1) backwards }
+.fi { animation: fade-in .6s ease-out backwards }
+.si { animation: slide-in .5s cubic-bezier(.2, .8, .2, 1) backwards }
+.blink { animation: blink 1s steps(1) infinite }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important } }
+</style>
+<defs>
+  
+<filter id="blur1" x="-50%" y="-300%" width="200%" height="700%"><feGaussianBlur stdDeviation="1.2"/></filter>
+<filter id="blur2" x="-20%" y="-60%" width="140%" height="220%"><feGaussianBlur stdDeviation="2.4"/></filter>
+<filter id="blur3" x="-10%" y="-100%" width="120%" height="300%"><feGaussianBlur stdDeviation="3.5"/></filter>
+<filter id="blur8" x="-20%" y="-100%" width="140%" height="300%"><feGaussianBlur stdDeviation="8"/></filter>
+<filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="1.6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="glowS" x="-400%" y="-400%" width="900%" height="900%"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+
+  <linearGradient id="line"><stop offset="0" stop-color="#a78bfa" stop-opacity="0"/><stop offset=".3" stop-color="#a78bfa" stop-opacity=".55"/>
+    <stop offset=".7" stop-color="#67e8f9" stop-opacity=".55"/><stop offset="1" stop-color="#67e8f9" stop-opacity="0"/></linearGradient>
+  <linearGradient id="comet"><stop offset="0" stop-color="#67e8f9" stop-opacity="0"/><stop offset="1" stop-color="#67e8f9" stop-opacity=".9"/></linearGradient>
+</defs>
+<rect x="0" y="14.5" width="1000" height="1" fill="url(#line)"/>
+<path d="M250.0,11.5 Q250.6,14.4 253.5,15.0 Q250.6,15.6 250.0,18.5 Q249.4,15.6 246.5,15.0 Q249.4,14.4 250.0,11.5 Z" fill="#67e8f9" style="animation:twinkle 3.6s ease-in-out 3.0s infinite"/><path d="M500.0,9.0 Q501.1,13.9 506.0,15.0 Q501.1,16.1 500.0,21.0 Q498.9,16.1 494.0,15.0 Q498.9,13.9 500.0,9.0 Z" fill="#a78bfa" style="animation:twinkle 4.0s ease-in-out 3.8s infinite"/><path d="M750.0,11.5 Q750.6,14.4 753.5,15.0 Q750.6,15.6 750.0,18.5 Q749.4,15.6 746.5,15.0 Q749.4,14.4 750.0,11.5 Z" fill="#67e8f9" style="animation:twinkle 3.9s ease-in-out 3.7s infinite"/>
+<g><animateTransform attributeName="transform" type="translate" from="-40 0" to="1080 0" dur="7s" repeatCount="indefinite"/>
+  <rect x="-70" y="14" width="70" height="2" rx="1" fill="url(#comet)"/>
+  <circle cx="0" cy="15" r="2.6" fill="#e0f2fe" filter="url(#glowS)"/>
+</g>
+</svg>
