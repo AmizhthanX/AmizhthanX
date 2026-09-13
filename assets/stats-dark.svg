@@ -1,11 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="464" height="236" viewBox="0 0 464 236" role="img" aria-label="AmizhthanX's GitHub Stats">
+<svg xmlns="http://www.w3.org/2000/svg" width="464" height="240" viewBox="0 0 464 240" role="img" aria-label="AmizhthanX's GitHub Stats">
 <style>
-  .t { font: 600 16px 'Segoe UI', Ubuntu, Sans-Serif; fill: #5cc8d7 }
-  .k { font: 400 13px 'Segoe UI', Ubuntu, Sans-Serif; fill: #c9d1d9 }
-  .v { font: 700 13px 'Segoe UI', Ubuntu, Sans-Serif; fill: #5cc8d7 }
-  .s { font: 400 11px 'Segoe UI', Ubuntu, Sans-Serif; fill: #8b949e }
-</style>
-<rect x="0.5" y="0.5" width="463" height="235" rx="8" fill="#0d1117" stroke="#30363d"/>
-<text x="24" y="34" class="t">AmizhthanX's GitHub Stats</text>
-<text x="24" y="68" class="k">Total Stars Earned</text><text x="440" y="68" class="v" text-anchor="end">1</text><text x="24" y="92" class="k">Total Commits</text><text x="440" y="92" class="v" text-anchor="end">37</text><text x="24" y="116" class="k">Total PRs</text><text x="440" y="116" class="v" text-anchor="end">3</text><text x="24" y="140" class="k">Total Issues</text><text x="440" y="140" class="v" text-anchor="end">1</text><text x="24" y="164" class="k">Public Repositories</text><text x="440" y="164" class="v" text-anchor="end">12</text><text x="24" y="188" class="k">Followers</text><text x="440" y="188" class="v" text-anchor="end">2</text><text x="24" y="220" class="s">50 contributions in the last year</text>
+@keyframes fade-up { from { opacity: 0; transform: translateY(8px) } }
+@keyframes fade-in { from { opacity: 0 } }
+@keyframes slide-in { from { opacity: 0; transform: translateX(-10px) } }
+@keyframes twinkle { 0%, 100% { opacity: .15 } 50% { opacity: .9 } }
+@keyframes blink { 50% { opacity: 0 } }
+.fu { animation: fade-up .7s cubic-bezier(.2, .8, .2, 1) backwards }
+.fi { animation: fade-in .6s ease-out backwards }
+.si { animation: slide-in .5s cubic-bezier(.2, .8, .2, 1) backwards }
+.blink { animation: blink 1s steps(1) infinite }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important } }
+.t { font: 600 16px 'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif; fill: #5cc8d7 }.k { font: 400 13px 'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif; fill: #c9d1d9 }.v { font: 700 13px 'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif; fill: #5cc8d7 }.s { font: 400 11px 'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif; fill: #8b949e }</style>
+<rect x="0.5" y="0.5" width="463" height="239" rx="8" fill="#0d1117" stroke="#30363d"/><text x="24" y="34" class="t fi">AmizhthanX's GitHub Stats</text><rect x="24" y="42" width="44" height="2" rx="1" fill="#5cc8d7"><animate attributeName="width" dur="0.900s" fill="freeze" calcMode="spline" keyTimes="0;0.3333;1" keySplines="0 0 1 1;.2 .8 .2 1" values="0;0;44.0"/></rect>
+<g class="si" style="animation-delay:0.25s"><text x="24" y="72" class="k">Total Stars Earned</text><text x="440" y="72" class="v" text-anchor="end">1</text></g><g class="si" style="animation-delay:0.34s"><text x="24" y="96" class="k">Total Commits</text><text x="440" y="96" class="v" text-anchor="end">37</text></g><g class="si" style="animation-delay:0.43s"><text x="24" y="120" class="k">Total PRs</text><text x="440" y="120" class="v" text-anchor="end">3</text></g><g class="si" style="animation-delay:0.52s"><text x="24" y="144" class="k">Total Issues</text><text x="440" y="144" class="v" text-anchor="end">1</text></g><g class="si" style="animation-delay:0.61s"><text x="24" y="168" class="k">Public Repositories</text><text x="440" y="168" class="v" text-anchor="end">12</text></g><g class="si" style="animation-delay:0.70s"><text x="24" y="192" class="k">Followers</text><text x="440" y="192" class="v" text-anchor="end">2</text></g><text x="24" y="224" class="s fi" style="animation-delay:.95s">50 contributions in the last year</text>
 </svg>

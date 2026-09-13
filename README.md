@@ -18,15 +18,9 @@
 
 ### 👋 About Me
 
-```yaml
-name:     Amizhthan Senguttuvan
-role:     Software Developer
-location: India 🇮🇳
-focus:    [ AI/ML, Computer Vision, Data Engineering, Full-Stack Web ]
-building: super-resolution for satellite imagery, AI-assisted compilers
-learning: AR/VR, distributed data systems
-motto:    "Ship it, then make it fast."
-```
+<div align="center">
+  <img src="assets/about.svg" alt="about.yaml — name: Amizhthan Senguttuvan · role: Software Developer · location: India · focus: AI/ML, Computer Vision, Data Engineering, Full-Stack · building: GeoVision super-resolution, AI-assisted compiler · learning: AR/VR, distributed data systems · motto: Ship it, then make it fast." width="100%" />
+</div>
 
 - 🛰️ Building **GeoVision** — deep-learning super-resolution that turns 10 m Sentinel-2 imagery into sub-4 m representations, with uncertainty maps so you know what's observed vs. estimated.
 - 🧠 Built an **AI-Assisted Compiler** that doesn't just report errors — it explains them, repairs them, and recompiles to prove the fix worked. Fully offline.
@@ -121,11 +115,11 @@ Churn prediction and behavioral segmentation from raw game-server logs.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg" />
-  <img src="assets/stats-light.svg" alt="GitHub statistics" height="200" />
+  <img src="assets/stats-light.svg" alt="GitHub statistics" height="240" />
 </picture>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/langs-dark.svg" />
-  <img src="assets/langs-light.svg" alt="Most used languages" height="200" />
+  <img src="assets/langs-light.svg" alt="Most used languages" height="240" />
 </picture>
 
 <br/><br/>
@@ -135,7 +129,7 @@ Churn prediction and behavioral segmentation from raw game-server logs.
   <img src="assets/heatmap-light.svg" alt="Contribution activity over the last year" width="98%" />
 </picture>
 
-<sub>Cards are generated from the GitHub API and refreshed daily by <a href="./.github/workflows/refresh-cards.yml">a workflow</a> — no third-party services.</sub>
+<sub>Cards are generated from the GitHub API and animated in pure SVG, and refreshed daily by <a href="./.github/workflows/refresh-cards.yml">a workflow</a> — no third-party services.</sub>
 
 </div>
 
